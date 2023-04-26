@@ -1,0 +1,430 @@
+  ./mvnw clean install  spring-boot:build-image -Pnative
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< com.example.appengine:kms >----------------------
+[INFO] Building kms 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ kms ---
+[INFO] Deleting /usr/local/google/home/ludo/a/kms/target
+[INFO] 
+[INFO] --- native:0.9.21:add-reachability-metadata (add-reachability-metadata) @ kms ---
+[INFO] Downloaded GraalVM reachability metadata repository from file:/usr/local/google/home/ludo/.m2/repository/org/graalvm/buildtools/graalvm-reachability-metadata/0.9.21/graalvm-reachability-metadata-0.9.21-repository.zip
+[INFO] [graalvm reachability metadata repository for ch.qos.logback:logback-classic:1.4.7]: Configuration directory not found. Trying latest version.
+[INFO] [graalvm reachability metadata repository for ch.qos.logback:logback-classic:1.4.7]: Configuration directory is ch.qos.logback/logback-classic/1.4.1
+[INFO] [graalvm reachability metadata repository for org.apache.tomcat.embed:tomcat-embed-core:10.1.8]: Configuration directory not found. Trying latest version.
+[INFO] [graalvm reachability metadata repository for org.apache.tomcat.embed:tomcat-embed-core:10.1.8]: Configuration directory is org.apache.tomcat.embed/tomcat-embed-core/10.0.20
+[INFO] [graalvm reachability metadata repository for org.thymeleaf:thymeleaf-spring6:3.1.1.RELEASE]: Configuration directory not found. Trying latest version.
+[INFO] [graalvm reachability metadata repository for org.thymeleaf:thymeleaf-spring6:3.1.1.RELEASE]: Configuration directory is org.thymeleaf/thymeleaf-spring6/3.1.0.M2
+[INFO] [graalvm reachability metadata repository for org.thymeleaf:thymeleaf:3.1.1.RELEASE]: Configuration directory not found. Trying latest version.
+[INFO] [graalvm reachability metadata repository for org.thymeleaf:thymeleaf:3.1.1.RELEASE]: Configuration directory is org.thymeleaf/thymeleaf/3.1.0.RC1
+[INFO] [graalvm reachability metadata repository for com.google.protobuf:protobuf-java-util:3.21.12]: Configuration directory is com.google.protobuf/protobuf-java-util/3.21.12
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ kms ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ kms ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 2 source files with javac [debug release 17] to target/classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ kms ---
+[INFO] skip non existing resourceDirectory /usr/local/google/home/ludo/a/kms/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ kms ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 1 source file with javac [debug release 17] to target/test-classes
+[INFO] 
+[INFO] --- surefire:3.0.0:test (default-test) @ kms ---
+[WARNING] Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.example.appengine.kms.KmsApplicationTests
+08:44:12.643 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Neither @ContextConfiguration nor @ContextHierarchy found for test class [KmsApplicationTests]: using SpringBootContextLoader
+08:44:12.646 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader -- Could not detect default resource locations for test class [com.example.appengine.kms.KmsApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+08:44:12.647 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.appengine.kms.KmsApplicationTests]: KmsApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+08:44:12.661 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Using ContextCustomizers for test class [KmsApplicationTests]: [ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer, DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer]
+08:44:12.696 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider -- Identified candidate component class: file [/usr/local/google/home/ludo/a/kms/target/classes/com/example/appengine/kms/KmsApplication.class]
+08:44:12.703 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.appengine.kms.KmsApplication for test class com.example.appengine.kms.KmsApplicationTests
+08:44:12.748 [main] DEBUG org.springframework.test.context.util.TestContextSpringFactoriesUtils -- Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+08:44:12.749 [main] DEBUG org.springframework.test.context.util.TestContextSpringFactoriesUtils -- Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+08:44:12.750 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Using TestExecutionListeners for test class [KmsApplicationTests]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, EventPublishingTestExecutionListener, ResetMocksTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener]
+08:44:12.750 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener -- Before test class: class [KmsApplicationTests], class annotated with @DirtiesContext [false] with mode [null]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::            (v3.1.0-RC1)
+
+2023-04-26T08:44:12.895-07:00  INFO 66895 --- [           main] c.e.appengine.kms.KmsApplicationTests    : Starting KmsApplicationTests using Java 17.0.5 with PID 66895 (started by ludo in /usr/local/google/home/ludo/a/kms)
+2023-04-26T08:44:12.896-07:00  INFO 66895 --- [           main] c.e.appengine.kms.KmsApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2023-04-26T08:44:13.470-07:00  WARN 66895 --- [           main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-04-26T08:44:13.518-07:00  INFO 66895 --- [           main] c.e.appengine.kms.KmsApplicationTests    : Started KmsApplicationTests in 0.749 seconds (process running for 1.285)
+OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.478 s - in com.example.appengine.kms.KmsApplicationTests
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.1.0-RC1:process-aot (process-aot) @ kms ---
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::            (v3.1.0-RC1)
+
+2023-04-26T08:44:14.660-07:00  INFO 66984 --- [           main] c.example.appengine.kms.KmsApplication   : Starting KmsApplication using Java 17.0.5 with PID 66984 (/usr/local/google/home/ludo/a/kms/target/classes started by ludo in /usr/local/google/home/ludo/a/kms)
+2023-04-26T08:44:14.663-07:00  INFO 66984 --- [           main] c.example.appengine.kms.KmsApplication   : No active profile set, falling back to 1 default profile: "default"
+[INFO] 
+[INFO] --- jar:3.3.0:jar (default-jar) @ kms ---
+[INFO] Building jar: /usr/local/google/home/ludo/a/kms/target/kms-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- spring-boot:3.1.0-RC1:repackage (repackage) @ kms ---
+[INFO] Replacing main artifact /usr/local/google/home/ludo/a/kms/target/kms-0.0.1-SNAPSHOT.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+[INFO] The original artifact has been renamed to /usr/local/google/home/ludo/a/kms/target/kms-0.0.1-SNAPSHOT.jar.original
+[INFO] 
+[INFO] --- install:3.1.1:install (default-install) @ kms ---
+[INFO] Installing /usr/local/google/home/ludo/a/kms/pom.xml to /usr/local/google/home/ludo/.m2/repository/com/example/appengine/kms/0.0.1-SNAPSHOT/kms-0.0.1-SNAPSHOT.pom
+[INFO] Installing /usr/local/google/home/ludo/a/kms/target/kms-0.0.1-SNAPSHOT.jar to /usr/local/google/home/ludo/.m2/repository/com/example/appengine/kms/0.0.1-SNAPSHOT/kms-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] >>> spring-boot:3.1.0-RC1:build-image (default-cli) > package @ kms >>>
+[INFO] 
+[INFO] --- native:0.9.21:add-reachability-metadata (add-reachability-metadata) @ kms ---
+[INFO] [graalvm reachability metadata repository for ch.qos.logback:logback-classic:1.4.7]: Configuration directory not found. Trying latest version.
+[INFO] [graalvm reachability metadata repository for ch.qos.logback:logback-classic:1.4.7]: Configuration directory is ch.qos.logback/logback-classic/1.4.1
+[INFO] [graalvm reachability metadata repository for org.apache.tomcat.embed:tomcat-embed-core:10.1.8]: Configuration directory not found. Trying latest version.
+[INFO] [graalvm reachability metadata repository for org.apache.tomcat.embed:tomcat-embed-core:10.1.8]: Configuration directory is org.apache.tomcat.embed/tomcat-embed-core/10.0.20
+[INFO] [graalvm reachability metadata repository for org.thymeleaf:thymeleaf-spring6:3.1.1.RELEASE]: Configuration directory not found. Trying latest version.
+[INFO] [graalvm reachability metadata repository for org.thymeleaf:thymeleaf-spring6:3.1.1.RELEASE]: Configuration directory is org.thymeleaf/thymeleaf-spring6/3.1.0.M2
+[INFO] [graalvm reachability metadata repository for org.thymeleaf:thymeleaf:3.1.1.RELEASE]: Configuration directory not found. Trying latest version.
+[INFO] [graalvm reachability metadata repository for org.thymeleaf:thymeleaf:3.1.1.RELEASE]: Configuration directory is org.thymeleaf/thymeleaf/3.1.0.RC1
+[INFO] [graalvm reachability metadata repository for com.google.protobuf:protobuf-java-util:3.21.12]: Configuration directory is com.google.protobuf/protobuf-java-util/3.21.12
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ kms ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ kms ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ kms ---
+[INFO] skip non existing resourceDirectory /usr/local/google/home/ludo/a/kms/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ kms ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 1 source file with javac [debug release 17] to target/test-classes
+[INFO] 
+[INFO] --- surefire:3.0.0:test (default-test) @ kms ---
+[WARNING] Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO] Skipping execution of surefire because it has already been run for this configuration
+[INFO] 
+[INFO] --- spring-boot:3.1.0-RC1:process-aot (process-aot) @ kms ---
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::            (v3.1.0-RC1)
+
+2023-04-26T08:44:21.277-07:00  INFO 67080 --- [           main] c.example.appengine.kms.KmsApplication   : Starting KmsApplication using Java 17.0.5 with PID 67080 (/usr/local/google/home/ludo/a/kms/target/classes started by ludo in /usr/local/google/home/ludo/a/kms)
+2023-04-26T08:44:21.282-07:00  INFO 67080 --- [           main] c.example.appengine.kms.KmsApplication   : No active profile set, falling back to 1 default profile: "default"
+[INFO] 
+[INFO] --- jar:3.3.0:jar (default-jar) @ kms ---
+[INFO] Building jar: /usr/local/google/home/ludo/a/kms/target/kms-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- spring-boot:3.1.0-RC1:repackage (repackage) @ kms ---
+[INFO] Replacing main artifact /usr/local/google/home/ludo/a/kms/target/kms-0.0.1-SNAPSHOT.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+[INFO] The original artifact has been renamed to /usr/local/google/home/ludo/a/kms/target/kms-0.0.1-SNAPSHOT.jar.original
+[INFO] 
+[INFO] <<< spring-boot:3.1.0-RC1:build-image (default-cli) < package @ kms <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.1.0-RC1:build-image (default-cli) @ kms ---
+[INFO] Building image 'docker.io/library/kms:0.0.1-SNAPSHOT'
+[INFO] 
+[INFO]  > Pulling builder image 'docker.io/paketobuildpacks/builder:tiny' 100%
+[INFO]  > Pulled builder image 'paketobuildpacks/builder@sha256:7ece2a4f6913a9b0e3f9bdf1f20f30808310cc53703011306ef63fe687f71d89'
+[INFO]  > Pulling run image 'docker.io/paketobuildpacks/run:tiny-cnb' 100%
+[INFO]  > Pulled run image 'paketobuildpacks/run@sha256:50d3c2913665974a8a0697a7d634fa4f4bab23b4e54a94be2a23ff52e193d4fe'
+[INFO]  > Executing lifecycle version v0.16.1
+[INFO]  > Using build cache volume 'pack-cache-fed8607271dc.build'
+[INFO] 
+[INFO]  > Running creator
+[INFO]     [creator]     ===> ANALYZING
+[INFO]     [creator]     Restoring data for SBOM from previous image
+[INFO]     [creator]     ===> DETECTING
+[INFO]     [creator]     6 of 15 buildpacks participating
+[INFO]     [creator]     paketo-buildpacks/ca-certificates   3.6.1
+[INFO]     [creator]     paketo-buildpacks/bellsoft-liberica 10.2.0
+[INFO]     [creator]     paketo-buildpacks/syft              1.28.0
+[INFO]     [creator]     paketo-buildpacks/executable-jar    6.6.3
+[INFO]     [creator]     paketo-buildpacks/spring-boot       5.23.0
+[INFO]     [creator]     paketo-buildpacks/native-image      5.9.0
+[INFO]     [creator]     ===> RESTORING
+[INFO]     [creator]     Restoring metadata for "paketo-buildpacks/ca-certificates:helper" from app image
+[INFO]     [creator]     Restoring metadata for "paketo-buildpacks/bellsoft-liberica:native-image-svm" from cache
+[INFO]     [creator]     Restoring metadata for "paketo-buildpacks/syft:syft" from cache
+[INFO]     [creator]     Restoring metadata for "paketo-buildpacks/native-image:native-image" from cache
+[INFO]     [creator]     Restoring data for "paketo-buildpacks/bellsoft-liberica:native-image-svm" from cache
+[INFO]     [creator]     Restoring data for "paketo-buildpacks/syft:syft" from cache
+[INFO]     [creator]     Restoring data for "paketo-buildpacks/native-image:native-image" from cache
+[INFO]     [creator]     Restoring data for SBOM from cache
+[INFO]     [creator]     ===> BUILDING
+[INFO]     [creator]     
+[INFO]     [creator]     Paketo Buildpack for CA Certificates 3.6.1
+[INFO]     [creator]       https://github.com/paketo-buildpacks/ca-certificates
+[INFO]     [creator]       Launch Helper: Reusing cached layer
+[INFO]     [creator]     
+[INFO]     [creator]     Paketo Buildpack for BellSoft Liberica 10.2.0
+[INFO]     [creator]       https://github.com/paketo-buildpacks/bellsoft-liberica
+[INFO]     [creator]       Build Configuration:
+[INFO]     [creator]         $BP_JVM_JLINK_ARGS           --no-man-pages --no-header-files --strip-debug --compress=1  configure custom link arguments (--output must be omitted)
+[INFO]     [creator]         $BP_JVM_JLINK_ENABLED        false                                                        enables running jlink tool to generate custom JRE
+[INFO]     [creator]         $BP_JVM_TYPE                 JRE                                                          the JVM type - JDK or JRE
+[INFO]     [creator]         $BP_JVM_VERSION              17                                                           the Java version
+[INFO]     [creator]       Launch Configuration:
+[INFO]     [creator]         $BPL_DEBUG_ENABLED           false                                                        enables Java remote debugging support
+[INFO]     [creator]         $BPL_DEBUG_PORT              8000                                                         configure the remote debugging port
+[INFO]     [creator]         $BPL_DEBUG_SUSPEND           false                                                        configure whether to suspend execution until a debugger has attached
+[INFO]     [creator]         $BPL_HEAP_DUMP_PATH                                                                       write heap dumps on error to this path
+[INFO]     [creator]         $BPL_JAVA_NMT_ENABLED        true                                                         enables Java Native Memory Tracking (NMT)
+[INFO]     [creator]         $BPL_JAVA_NMT_LEVEL          summary                                                      configure level of NMT, summary or detail
+[INFO]     [creator]         $BPL_JFR_ARGS                                                                             configure custom Java Flight Recording (JFR) arguments
+[INFO]     [creator]         $BPL_JFR_ENABLED             false                                                        enables Java Flight Recording (JFR)
+[INFO]     [creator]         $BPL_JMX_ENABLED             false                                                        enables Java Management Extensions (JMX)
+[INFO]     [creator]         $BPL_JMX_PORT                5000                                                         configure the JMX port
+[INFO]     [creator]         $BPL_JVM_HEAD_ROOM           0                                                            the headroom in memory calculation
+[INFO]     [creator]         $BPL_JVM_LOADED_CLASS_COUNT  35% of classes                                               the number of loaded classes in memory calculation
+[INFO]     [creator]         $BPL_JVM_THREAD_COUNT        250                                                          the number of threads in memory calculation
+[INFO]     [creator]         $JAVA_TOOL_OPTIONS                                                                        the JVM launch flags
+[INFO]     [creator]         Using Java version 17 extracted from MANIFEST.MF
+[INFO]     [creator]       BellSoft Liberica NIK 17.0.6: Contributing to layer
+[INFO]     [creator]         Downloading from https://download.bell-sw.com/vm/22.3.1/bellsoft-liberica-vm-core-openjdk17.0.6+10-22.3.1+1-linux-amd64.tar.gz
+[INFO]     [creator]         Verifying checksum
+[INFO]     [creator]         Expanding to /layers/paketo-buildpacks_bellsoft-liberica/native-image-svm
+[INFO]     [creator]         Adding 124 container CA certificates to JVM truststore
+[INFO]     [creator]         Writing env.build/JAVA_HOME.override
+[INFO]     [creator]         Writing env.build/JDK_HOME.override
+[INFO]     [creator]     
+[INFO]     [creator]     Paketo Buildpack for Syft 1.28.0
+[INFO]     [creator]       https://github.com/paketo-buildpacks/syft
+[INFO]     [creator]         Downloading from https://github.com/anchore/syft/releases/download/v0.77.0/syft_0.77.0_linux_amd64.tar.gz
+[INFO]     [creator]         Verifying checksum
+[INFO]     [creator]         Writing env.build/SYFT_CHECK_FOR_APP_UPDATE.default
+[INFO]     [creator]     
+[INFO]     [creator]     Paketo Buildpack for Executable JAR 6.6.3
+[INFO]     [creator]       https://github.com/paketo-buildpacks/executable-jar
+[INFO]     [creator]       Class Path: Contributing to layer
+[INFO]     [creator]         Writing env.build/CLASSPATH.delim
+[INFO]     [creator]         Writing env.build/CLASSPATH.prepend
+[INFO]     [creator]     
+[INFO]     [creator]     Paketo Buildpack for Spring Boot 5.23.0
+[INFO]     [creator]       https://github.com/paketo-buildpacks/spring-boot
+[INFO]     [creator]       Build Configuration:
+[INFO]     [creator]         $BP_SPRING_CLOUD_BINDINGS_DISABLED   false  whether to contribute Spring Boot cloud bindings support
+[INFO]     [creator]       Launch Configuration:
+[INFO]     [creator]         $BPL_SPRING_CLOUD_BINDINGS_DISABLED  false  whether to auto-configure Spring Boot environment properties from bindings
+[INFO]     [creator]         $BPL_SPRING_CLOUD_BINDINGS_ENABLED   true   Deprecated - whether to auto-configure Spring Boot environment properties from bindings
+[INFO]     [creator]       Class Path: Contributing to layer
+[INFO]     [creator]         Writing env.build/CLASSPATH.append
+[INFO]     [creator]         Writing env.build/CLASSPATH.delim
+[INFO]     [creator]       Image labels:
+[INFO]     [creator]         org.opencontainers.image.title
+[INFO]     [creator]         org.opencontainers.image.version
+[INFO]     [creator]         org.springframework.boot.version
+[INFO]     [creator]     Warning: BOM table is deprecated in this buildpack api version, though it remains supported for backwards compatibility. Buildpack authors should write BOM information to <layer>.sbom.<ext>, launch.sbom.<ext>, or build.sbom.<ext>.
+[INFO]     [creator]     
+[INFO]     [creator]     Paketo Buildpack for Native Image 5.9.0
+[INFO]     [creator]       https://github.com/paketo-buildpacks/native-image
+[INFO]     [creator]       Build Configuration:
+[INFO]     [creator]         $BP_BINARY_COMPRESSION_METHOD                Compression mechanism used to reduce binary size. Options: `none` (default), `upx` or `gzexe`
+[INFO]     [creator]         $BP_NATIVE_IMAGE                       true  enable native image build
+[INFO]     [creator]         $BP_NATIVE_IMAGE_BUILD_ARGUMENTS             arguments to pass to the native-image command
+[INFO]     [creator]         $BP_NATIVE_IMAGE_BUILD_ARGUMENTS_FILE        a file with arguments to pass to the native-image command
+[INFO]     [creator]         $BP_NATIVE_IMAGE_BUILT_ARTIFACT              the built application artifact explicitly, required if building from a JAR
+[INFO]     [creator]       Native Image: Contributing to layer
+[INFO]     [creator]         Executing native-image -H:+StaticExecutableWithDynamicLibC -H:Name=/layers/paketo-buildpacks_native-image/native-image/com.example.appengine.kms.KmsApplication -cp /workspace:/workspace/BOOT-INF/classes:/workspace/BOOT-INF/lib/spring-boot-3.1.0-RC1.jar:/workspace/BOOT-INF/lib/spring-boot-autoconfigure-3.1.0-RC1.jar:/workspace/BOOT-INF/lib/logback-classic-1.4.7.jar:/workspace/BOOT-INF/lib/logback-core-1.4.7.jar:/workspace/BOOT-INF/lib/log4j-to-slf4j-2.20.0.jar:/workspace/BOOT-INF/lib/log4j-api-2.20.0.jar:/workspace/BOOT-INF/lib/jul-to-slf4j-2.0.7.jar:/workspace/BOOT-INF/lib/jakarta.annotation-api-2.1.1.jar:/workspace/BOOT-INF/lib/snakeyaml-1.33.jar:/workspace/BOOT-INF/lib/jackson-databind-2.15.0-rc3.jar:/workspace/BOOT-INF/lib/jackson-annotations-2.15.0-rc3.jar:/workspace/BOOT-INF/lib/jackson-core-2.15.0-rc3.jar:/workspace/BOOT-INF/lib/jackson-datatype-jdk8-2.15.0-rc3.jar:/workspace/BOOT-INF/lib/jackson-datatype-jsr310-2.15.0-rc3.jar:/workspace/BOOT-INF/lib/jackson-module-parameter-names-2.15.0-rc3.jar:/workspace/BOOT-INF/lib/tomcat-embed-core-10.1.8.jar:/workspace/BOOT-INF/lib/tomcat-embed-el-10.1.8.jar:/workspace/BOOT-INF/lib/tomcat-embed-websocket-10.1.8.jar:/workspace/BOOT-INF/lib/spring-web-6.0.8.jar:/workspace/BOOT-INF/lib/spring-beans-6.0.8.jar:/workspace/BOOT-INF/lib/micrometer-observation-1.11.0-RC1.jar:/workspace/BOOT-INF/lib/micrometer-commons-1.11.0-RC1.jar:/workspace/BOOT-INF/lib/spring-webmvc-6.0.8.jar:/workspace/BOOT-INF/lib/spring-aop-6.0.8.jar:/workspace/BOOT-INF/lib/spring-context-6.0.8.jar:/workspace/BOOT-INF/lib/spring-expression-6.0.8.jar:/workspace/BOOT-INF/lib/thymeleaf-spring6-3.1.1.RELEASE.jar:/workspace/BOOT-INF/lib/thymeleaf-3.1.1.RELEASE.jar:/workspace/BOOT-INF/lib/attoparser-2.0.6.RELEASE.jar:/workspace/BOOT-INF/lib/unbescape-1.1.6.RELEASE.jar:/workspace/BOOT-INF/lib/slf4j-api-2.0.7.jar:/workspace/BOOT-INF/lib/spring-core-6.0.8.jar:/workspace/BOOT-INF/lib/spring-jcl-6.0.8.jar:/workspace/BOOT-INF/lib/google-cloud-secretmanager-2.15.0.jar:/workspace/BOOT-INF/lib/grpc-api-1.54.0.jar:/workspace/BOOT-INF/lib/grpc-context-1.54.0.jar:/workspace/BOOT-INF/lib/jsr305-3.0.2.jar:/workspace/BOOT-INF/lib/error_prone_annotations-2.18.0.jar:/workspace/BOOT-INF/lib/grpc-stub-1.54.0.jar:/workspace/BOOT-INF/lib/grpc-protobuf-1.54.0.jar:/workspace/BOOT-INF/lib/grpc-protobuf-lite-1.54.0.jar:/workspace/BOOT-INF/lib/api-common-2.8.0.jar:/workspace/BOOT-INF/lib/auto-value-annotations-1.10.1.jar:/workspace/BOOT-INF/lib/javax.annotation-api-1.3.2.jar:/workspace/BOOT-INF/lib/protobuf-java-3.21.12.jar:/workspace/BOOT-INF/lib/proto-google-common-protos-2.16.0.jar:/workspace/BOOT-INF/lib/proto-google-iam-v1-1.11.0.jar:/workspace/BOOT-INF/lib/proto-google-cloud-secretmanager-v1-2.15.0.jar:/workspace/BOOT-INF/lib/proto-google-cloud-secretmanager-v1beta1-2.15.0.jar:/workspace/BOOT-INF/lib/guava-31.1-jre.jar:/workspace/BOOT-INF/lib/failureaccess-1.0.1.jar:/workspace/BOOT-INF/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/workspace/BOOT-INF/lib/checker-qual-3.32.0.jar:/workspace/BOOT-INF/lib/j2objc-annotations-1.3.jar:/workspace/BOOT-INF/lib/gax-2.25.0.jar:/workspace/BOOT-INF/lib/google-auth-library-credentials-1.16.0.jar:/workspace/BOOT-INF/lib/opencensus-api-0.31.1.jar:/workspace/BOOT-INF/lib/google-auth-library-oauth2-http-1.16.0.jar:/workspace/BOOT-INF/lib/gax-grpc-2.25.0.jar:/workspace/BOOT-INF/lib/grpc-alts-1.54.0.jar:/workspace/BOOT-INF/lib/grpc-grpclb-1.54.0.jar:/workspace/BOOT-INF/lib/conscrypt-openjdk-uber-2.5.2.jar:/workspace/BOOT-INF/lib/grpc-auth-1.54.0.jar:/workspace/BOOT-INF/lib/grpc-netty-shaded-1.54.0.jar:/workspace/BOOT-INF/lib/perfmark-api-0.26.0.jar:/workspace/BOOT-INF/lib/grpc-core-1.54.0.jar:/workspace/BOOT-INF/lib/annotations-4.1.1.4.jar:/workspace/BOOT-INF/lib/animal-sniffer-annotations-1.23.jar:/workspace/BOOT-INF/lib/grpc-googleapis-1.54.0.jar:/workspace/BOOT-INF/lib/grpc-xds-1.54.0.jar:/workspace/BOOT-INF/lib/opencensus-proto-0.2.0.jar:/workspace/BOOT-INF/lib/grpc-services-1.54.0.jar:/workspace/BOOT-INF/lib/re2j-1.6.jar:/workspace/BOOT-INF/lib/gax-httpjson-0.110.0.jar:/workspace/BOOT-INF/lib/gson-2.10.1.jar:/workspace/BOOT-INF/lib/google-http-client-1.43.1.jar:/workspace/BOOT-INF/lib/httpclient-4.5.14.jar:/workspace/BOOT-INF/lib/commons-logging-1.2.jar:/workspace/BOOT-INF/lib/commons-codec-1.15.jar:/workspace/BOOT-INF/lib/httpcore-4.4.16.jar:/workspace/BOOT-INF/lib/opencensus-contrib-http-util-0.31.1.jar:/workspace/BOOT-INF/lib/google-http-client-gson-1.43.1.jar:/workspace/BOOT-INF/lib/protobuf-java-util-3.21.12.jar:/workspace/BOOT-INF/lib/threetenbp-1.6.8.jar:/workspace/BOOT-INF/lib/google-cloud-kms-2.14.0.jar:/workspace/BOOT-INF/lib/auto-value-1.10.1.jar:/workspace/BOOT-INF/lib/grpc-google-common-protos-2.14.1.jar:/workspace/BOOT-INF/lib/proto-google-cloud-kms-v1-0.105.0.jar:/workspace/BOOT-INF/lib/grpc-google-iam-v1-1.9.1.jar:/workspace/BOOT-INF/lib/spring-boot-jarmode-layertools-3.1.0-RC1.jar com.example.appengine.kms.KmsApplication
+[INFO]     [creator]     ================================================================================
+[INFO]     [creator]     GraalVM Native Image: Generating '/layers/paketo-buildpacks_native-image/native-image/com.example.appengine.kms.KmsApplication' (static executable)...
+[INFO]     [creator]     ================================================================================
+[INFO]     [creator]     Warning: Could not resolve com.google.auth.appengine.AppEngineCredentials for reflection configuration. Reason: java.lang.ClassNotFoundException: com.google.auth.appengine.AppEngineCredentials.
+[INFO]     [creator]     Warning: Could not resolve org.apache.commons.pool2.impl.DefaultEvictionPolicy for reflection configuration. Reason: java.lang.ClassNotFoundException: org.apache.commons.pool2.impl.DefaultEvictionPolicy.
+[INFO]     [creator]     Warning: Could not register io.grpc.netty.shaded.io.netty.handler.codec.compression.Lz4FrameDecoder: queryAllPublicMethods for reflection. Reason: java.lang.NoClassDefFoundError: net/jpountz/lz4/LZ4Exception.
+[INFO]     [creator]     Warning: Could not register io.grpc.netty.shaded.io.netty.handler.codec.compression.Lz4FrameEncoder: queryAllPublicMethods for reflection. Reason: java.lang.NoClassDefFoundError: net/jpountz/lz4/LZ4Exception.
+[INFO]     [creator]     Warning: Could not register io.grpc.netty.shaded.io.netty.handler.codec.marshalling.CompatibleMarshallingDecoder: queryAllPublicMethods for reflection. Reason: java.lang.NoClassDefFoundError: org/jboss/marshalling/ByteInput.
+[INFO]     [creator]     Warning: Could not register io.grpc.netty.shaded.io.netty.handler.codec.marshalling.CompatibleMarshallingEncoder: queryAllPublicMethods for reflection. Reason: java.lang.NoClassDefFoundError: org/jboss/marshalling/ByteOutput.
+[INFO]     [creator]     Warning: Could not register io.grpc.netty.shaded.io.netty.handler.codec.marshalling.MarshallingDecoder: queryAllPublicMethods for reflection. Reason: java.lang.NoClassDefFoundError: org/jboss/marshalling/ByteInput.
+[INFO]     [creator]     Warning: Could not register io.grpc.netty.shaded.io.netty.handler.codec.marshalling.MarshallingEncoder: queryAllPublicMethods for reflection. Reason: java.lang.NoClassDefFoundError: org/jboss/marshalling/ByteOutput.
+[INFO]     [creator]     Warning: Could not register io.grpc.netty.shaded.io.netty.handler.codec.compression.Lz4FrameDecoder: queryAllPublicMethods for reflection. Reason: java.lang.NoClassDefFoundError: net/jpountz/lz4/LZ4Exception.
+[INFO]     [creator]     Warning: Could not register io.grpc.netty.shaded.io.netty.handler.codec.compression.Lz4FrameEncoder: queryAllPublicMethods for reflection. Reason: java.lang.NoClassDefFoundError: net/jpountz/lz4/LZ4Exception.
+[INFO]     [creator]     Warning: Could not register io.grpc.netty.shaded.io.netty.handler.codec.marshalling.CompatibleMarshallingDecoder: queryAllPublicMethods for reflection. Reason: java.lang.NoClassDefFoundError: org/jboss/marshalling/ByteInput.
+[INFO]     [creator]     Warning: Could not register io.grpc.netty.shaded.io.netty.handler.codec.marshalling.CompatibleMarshallingEncoder: queryAllPublicMethods for reflection. Reason: java.lang.NoClassDefFoundError: org/jboss/marshalling/ByteOutput.
+[INFO]     [creator]     Warning: Could not register io.grpc.netty.shaded.io.netty.handler.codec.marshalling.MarshallingDecoder: queryAllPublicMethods for reflection. Reason: java.lang.NoClassDefFoundError: org/jboss/marshalling/ByteInput.
+[INFO]     [creator]     Warning: Could not register io.grpc.netty.shaded.io.netty.handler.codec.marshalling.MarshallingEncoder: queryAllPublicMethods for reflection. Reason: java.lang.NoClassDefFoundError: org/jboss/marshalling/ByteOutput.
+[INFO]     [creator]     [1/7] Initializing...                                           (12.1s @ 0.52GB)
+[INFO]     [creator]      Version info: 'GraalVM 22.3.1 Java 17 CE'
+[INFO]     [creator]      Java version info: '17.0.6+10-LTS'
+[INFO]     [creator]      C compiler: gcc (linux, x86_64, 7.5.0)
+[INFO]     [creator]      Garbage collector: Serial GC
+[INFO]     [creator]      6 user-specific feature(s)
+[INFO]     [creator]      - com.google.api.gax.grpc.nativeimage.GrpcNettyFeature
+[INFO]     [creator]      - com.google.api.gax.grpc.nativeimage.ProtobufMessageFeature
+[INFO]     [creator]      - com.google.api.gax.nativeimage.GoogleJsonClientFeature
+[INFO]     [creator]      - com.google.api.gax.nativeimage.OpenCensusFeature
+[INFO]     [creator]      - com.oracle.svm.thirdparty.gson.GsonFeature
+[INFO]     [creator]      - org.springframework.aot.nativex.feature.PreComputeFieldFeature
+[INFO]     [creator]     Apr 26, 2023 3:44:55 PM com.google.api.gax.nativeimage.NativeImageUtils registerClassForReflection
+[INFO]     [creator]     WARNING: Failed to find io.grpc.netty.shaded.io.netty.channel.ProtocolNegotiators on the classpath for reflection.
+[INFO]     [creator]     Field org.apache.commons.logging.LogAdapter#log4jSpiPresent will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.apache.commons.logging.LogAdapter.log4jSpiPresent: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+[INFO]     [creator]     Field org.apache.commons.logging.LogAdapter#log4jSlf4jProviderPresent will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.apache.commons.logging.LogAdapter.log4jSlf4jProviderPresent: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+[INFO]     [creator]     Field org.apache.commons.logging.LogAdapter#slf4jSpiPresent will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.apache.commons.logging.LogAdapter.slf4jSpiPresent: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+[INFO]     [creator]     Field org.apache.commons.logging.LogAdapter#slf4jApiPresent will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.apache.commons.logging.LogAdapter.slf4jApiPresent: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+[INFO]     [creator]     Field org.springframework.core.NativeDetector#imageCode will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.springframework.core.NativeDetector.imageCode: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+[INFO]     [creator]     Field org.springframework.core.KotlinDetector#kotlinPresent will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.springframework.core.KotlinDetector.kotlinPresent: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+[INFO]     [creator]     Field org.springframework.core.KotlinDetector#kotlinReflectPresent will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.springframework.core.KotlinDetector.kotlinReflectPresent: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+[INFO]     [creator]     Field org.springframework.format.support.DefaultFormattingConversionService#jsr354Present will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.springframework.format.support.DefaultFormattingConversionService.jsr354Present: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+[INFO]     [creator]     Field org.springframework.context.annotation.AnnotationConfigUtils#jakartaAnnotationsPresent will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.springframework.context.annotation.AnnotationConfigUtils.jakartaAnnotationsPresent: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+[INFO]     [creator]     Field org.springframework.context.annotation.AnnotationConfigUtils#jsr250Present will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.springframework.context.annotation.AnnotationConfigUtils.jsr250Present: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+[INFO]     [creator]     Field org.springframework.context.annotation.AnnotationConfigUtils#jpaPresent will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.springframework.context.annotation.AnnotationConfigUtils.jpaPresent: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+[INFO]     [creator]     Field org.springframework.context.annotation.CommonAnnotationBeanPostProcessor#jndiPresent will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.jndiPresent: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+[INFO]     [creator]     Field org.springframework.cglib.core.AbstractClassGenerator#imageCode will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.springframework.cglib.core.AbstractClassGenerator.imageCode: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+^[[A[INFO]     [creator]     Field org.springframework.http.converter.json.Jackson2ObjectMapperBuilder#jackson2XmlPresent will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.springframework.http.converter.json.Jackson2ObjectMapperBuilder.jackson2XmlPresent: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+[INFO]     [creator]     Field org.springframework.boot.logging.log4j2.Log4J2LoggingSystem$Factory#PRESENT will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.springframework.boot.logging.log4j2.Log4J2LoggingSystem$Factory.PRESENT: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+[INFO]     [creator]     Field org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport#romePresent will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.romePresent: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+[INFO]     [creator]     Field org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport#jaxb2Present will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.jaxb2Present: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+[INFO]     [creator]     Field org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport#jackson2Present will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.jackson2Present: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+[INFO]     [creator]     Field org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport#jackson2XmlPresent will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.jackson2XmlPresent: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+[INFO]     [creator]     Field org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport#jackson2SmilePresent will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.jackson2SmilePresent: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+[INFO]     [creator]     Field org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport#jackson2CborPresent will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.jackson2CborPresent: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+[INFO]     [creator]     Field org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport#gsonPresent will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.gsonPresent: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+[INFO]     [creator]     Field org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport#jsonbPresent will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.jsonbPresent: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+[INFO]     [creator]     Field org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport#kotlinSerializationCborPresent will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.kotlinSerializationCborPresent: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+[INFO]     [creator]     Field org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport#kotlinSerializationJsonPresent will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.kotlinSerializationJsonPresent: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+[INFO]     [creator]     Field org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport#kotlinSerializationProtobufPresent will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.kotlinSerializationProtobufPresent: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+[INFO]     [creator]     Field org.springframework.boot.logging.java.JavaLoggingSystem$Factory#PRESENT will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.springframework.boot.logging.java.JavaLoggingSystem$Factory.PRESENT: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+[INFO]     [creator]     Field org.springframework.web.servlet.view.InternalResourceViewResolver#jstlPresent will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.springframework.web.servlet.view.InternalResourceViewResolver.jstlPresent: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+[INFO]     [creator]     Field org.springframework.boot.logging.logback.LogbackLoggingSystem$Factory#PRESENT will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.springframework.boot.logging.logback.LogbackLoggingSystem$Factory.PRESENT: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+[INFO]     [creator]     Field org.springframework.context.event.ApplicationListenerMethodAdapter#reactiveStreamsPresent will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.springframework.context.event.ApplicationListenerMethodAdapter.reactiveStreamsPresent: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+[INFO]     [creator]     Field org.springframework.http.converter.support.AllEncompassingFormHttpMessageConverter#jaxb2Present will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.springframework.http.converter.support.AllEncompassingFormHttpMessageConverter.jaxb2Present: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+[INFO]     [creator]     Field org.springframework.http.converter.support.AllEncompassingFormHttpMessageConverter#jackson2Present will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.springframework.http.converter.support.AllEncompassingFormHttpMessageConverter.jackson2Present: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+[INFO]     [creator]     Field org.springframework.http.converter.support.AllEncompassingFormHttpMessageConverter#jackson2XmlPresent will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.springframework.http.converter.support.AllEncompassingFormHttpMessageConverter.jackson2XmlPresent: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+[INFO]     [creator]     Field org.springframework.http.converter.support.AllEncompassingFormHttpMessageConverter#jackson2SmilePresent will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.springframework.http.converter.support.AllEncompassingFormHttpMessageConverter.jackson2SmilePresent: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+[INFO]     [creator]     Field org.springframework.http.converter.support.AllEncompassingFormHttpMessageConverter#gsonPresent will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.springframework.http.converter.support.AllEncompassingFormHttpMessageConverter.gsonPresent: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+[INFO]     [creator]     Field org.springframework.http.converter.support.AllEncompassingFormHttpMessageConverter#jsonbPresent will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.springframework.http.converter.support.AllEncompassingFormHttpMessageConverter.jsonbPresent: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+[INFO]     [creator]     Field org.springframework.http.converter.support.AllEncompassingFormHttpMessageConverter#kotlinSerializationCborPresent will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.springframework.http.converter.support.AllEncompassingFormHttpMessageConverter.kotlinSerializationCborPresent: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+[INFO]     [creator]     Field org.springframework.http.converter.support.AllEncompassingFormHttpMessageConverter#kotlinSerializationJsonPresent will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.springframework.http.converter.support.AllEncompassingFormHttpMessageConverter.kotlinSerializationJsonPresent: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+[INFO]     [creator]     Field org.springframework.http.converter.support.AllEncompassingFormHttpMessageConverter#kotlinSerializationProtobufPresent will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.springframework.http.converter.support.AllEncompassingFormHttpMessageConverter.kotlinSerializationProtobufPresent: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+[INFO]     [creator]     Field org.springframework.core.ReactiveAdapterRegistry#reactorPresent will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.springframework.core.ReactiveAdapterRegistry.reactorPresent: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+[INFO]     [creator]     Field org.springframework.core.ReactiveAdapterRegistry#rxjava3Present will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.springframework.core.ReactiveAdapterRegistry.rxjava3Present: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+[INFO]     [creator]     Field org.springframework.core.ReactiveAdapterRegistry#kotlinCoroutinesPresent will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.springframework.core.ReactiveAdapterRegistry.kotlinCoroutinesPresent: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+[INFO]     [creator]     Field org.springframework.core.ReactiveAdapterRegistry#mutinyPresent will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.springframework.core.ReactiveAdapterRegistry.mutinyPresent: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+[INFO]     [creator]     Field org.springframework.web.client.RestTemplate#romePresent will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.springframework.web.client.RestTemplate.romePresent: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+[INFO]     [creator]     Field org.springframework.web.client.RestTemplate#jaxb2Present will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.springframework.web.client.RestTemplate.jaxb2Present: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+[INFO]     [creator]     Field org.springframework.web.client.RestTemplate#jackson2Present will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.springframework.web.client.RestTemplate.jackson2Present: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+[INFO]     [creator]     Field org.springframework.web.client.RestTemplate#jackson2XmlPresent will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.springframework.web.client.RestTemplate.jackson2XmlPresent: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+[INFO]     [creator]     Field org.springframework.web.client.RestTemplate#jackson2SmilePresent will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.springframework.web.client.RestTemplate.jackson2SmilePresent: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+[INFO]     [creator]     Field org.springframework.web.client.RestTemplate#jackson2CborPresent will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.springframework.web.client.RestTemplate.jackson2CborPresent: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+[INFO]     [creator]     Field org.springframework.web.client.RestTemplate#gsonPresent will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.springframework.web.client.RestTemplate.gsonPresent: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+[INFO]     [creator]     Field org.springframework.web.client.RestTemplate#jsonbPresent will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.springframework.web.client.RestTemplate.jsonbPresent: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+[INFO]     [creator]     Field org.springframework.web.client.RestTemplate#kotlinSerializationCborPresent will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.springframework.web.client.RestTemplate.kotlinSerializationCborPresent: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+[INFO]     [creator]     Field org.springframework.web.client.RestTemplate#kotlinSerializationJsonPresent will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.springframework.web.client.RestTemplate.kotlinSerializationJsonPresent: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+[INFO]     [creator]     Field org.springframework.web.client.RestTemplate#kotlinSerializationProtobufPresent will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.springframework.web.client.RestTemplate.kotlinSerializationProtobufPresent: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+[INFO]     [creator]     Field org.springframework.boot.autoconfigure.web.format.WebConversionService#JSR_354_PRESENT will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.springframework.boot.autoconfigure.web.format.WebConversionService.JSR_354_PRESENT: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+[INFO]     [creator]     Field org.springframework.web.context.support.StandardServletEnvironment#jndiPresent will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.springframework.web.context.support.StandardServletEnvironment.jndiPresent: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+[INFO]     [creator]     Field org.springframework.web.context.support.WebApplicationContextUtils#jsfPresent will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.springframework.web.context.support.WebApplicationContextUtils.jsfPresent: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+[INFO]     [creator]     Field org.springframework.web.context.request.RequestContextHolder#jsfPresent will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.springframework.web.context.request.RequestContextHolder.jsfPresent: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+[INFO]     [creator]     Field org.springframework.boot.logging.logback.LogbackLoggingSystemProperties#JBOSS_LOGGING_PRESENT will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.springframework.boot.logging.logback.LogbackLoggingSystemProperties.JBOSS_LOGGING_PRESENT: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+[INFO]     [creator]     SLF4J: No SLF4J providers were found.
+[INFO]     [creator]     SLF4J: Defaulting to no-operation (NOP) logger implementation
+[INFO]     [creator]     SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+[INFO]     [creator]     Field org.springframework.web.servlet.mvc.method.annotation.ReactiveTypeHandler#isContextPropagationPresent will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.springframework.web.servlet.mvc.method.annotation.ReactiveTypeHandler.isContextPropagationPresent: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+[INFO]     [creator]     Field org.springframework.web.servlet.support.RequestContext#jstlPresent will be evaluated at runtime due to this error during build time evaluation: Cannot register a field value transformer for field org.springframework.web.servlet.support.RequestContext.jstlPresent: The field was already accessed by the static analysis. The transformer must be registered earlier, before the static analysis sees a reference to the field for the first time.
+[INFO]     [creator]     [2/7] Performing analysis...  [**********]                      (48.0s @ 4.37GB)
+[INFO]     [creator]       25,805 (93.63%) of 27,561 classes reachable
+[INFO]     [creator]       50,371 (69.76%) of 72,207 fields reachable
+[INFO]     [creator]      212,700 (70.53%) of 301,590 methods reachable
+[INFO]     [creator]        1,215 classes, 1,441 fields, and 71,793 methods registered for reflection
+[INFO]     [creator]           64 classes,    70 fields, and    55 methods registered for JNI access
+[INFO]     [creator]            4 native libraries: dl, pthread, rt, z
+[INFO]     [creator]     [3/7] Building universe...                                       (5.4s @ 4.08GB)
+[INFO]     [creator]     [4/7] Parsing methods...      [**]                               (4.0s @ 4.23GB)
+[INFO]     [creator]     [5/7] Inlining methods...     [****]                             (2.4s @ 3.23GB)
+[INFO]     [creator]     [6/7] Compiling methods...    [****]                            (17.9s @ 5.89GB)
+[INFO]     [creator]     [7/7] Creating image...                                          (7.8s @ 4.06GB)
+[INFO]     [creator]       72.40MB (49.45%) for code area:   161,364 compilation units
+[INFO]     [creator]       63.80MB (43.57%) for image heap:  608,851 objects and 127 resources
+[INFO]     [creator]       10.21MB ( 6.97%) for other data
+[INFO]     [creator]      146.41MB in total
+[INFO]     [creator]     --------------------------------------------------------------------------------
+[INFO]     [creator]     Top 10 packages in code area:           Top 10 object types in image heap:
+[INFO]     [creator]        2.17MB i.g.x.s.i.e.e.config.core.v3    16.51MB byte[] for code metadata
+[INFO]     [creator]        2.15MB com.google.protobuf              7.11MB java.lang.Class
+[INFO]     [creator]        2.11MB i.g.x.s.i.e.e.config.route.v3    5.60MB byte[] for reflection metadata
+[INFO]     [creator]        1.64MB sun.security.ssl                 5.57MB byte[] for java.lang.String
+[INFO]     [creator]        1.54MB i.g.x.s.i.e.e.api.v2.route       5.42MB java.lang.String
+[INFO]     [creator]        1.49MB com.google.cloud.kms.v1          4.31MB byte[] for general heap data
+[INFO]     [creator]        1.35MB i.g.x.s.i.e.envoy.api.v2.core    3.70MB byte[] for embedded resources
+[INFO]     [creator]        1.12MB java.util                        3.65MB c.o.s.c.r.Substrate~odAccessor
+[INFO]     [creator]        1.08MB i.g.x.s.i.e.envoy.api.v2         2.17MB c.o.s.c.h.DynamicHubCompanion
+[INFO]     [creator]        1.06MB com.google.re2j                  1.07MB java.lang.String[]
+[INFO]     [creator]       55.57MB for 888 more packages            8.14MB for 4304 more object types
+[INFO]     [creator]     --------------------------------------------------------------------------------
+[INFO]     [creator]         5.7s (5.3% of total time) in 71 GCs | Peak RSS: 8.57GB | CPU load: 9.25
+[INFO]     [creator]     --------------------------------------------------------------------------------
+[INFO]     [creator]     Produced artifacts:
+[INFO]     [creator]      /layers/paketo-buildpacks_native-image/native-image/com.example.appengine.kms.KmsApplication (executable)
+[INFO]     [creator]      /layers/paketo-buildpacks_native-image/native-image/com.example.appengine.kms.KmsApplication.build_artifacts.txt (txt)
+[INFO]     [creator]     ================================================================================
+[INFO]     [creator]     Finished generating '/layers/paketo-buildpacks_native-image/native-image/com.example.appengine.kms.KmsApplication' in 1m 47s.
+[INFO]     [creator]       Removing bytecode
+[INFO]     [creator]       Process types:
+[INFO]     [creator]         native-image: /workspace/com.example.appengine.kms.KmsApplication (direct)
+[INFO]     [creator]         task:         /workspace/com.example.appengine.kms.KmsApplication (direct)
+[INFO]     [creator]         web:          /workspace/com.example.appengine.kms.KmsApplication (direct)
+[INFO]     [creator]     ===> EXPORTING
+[INFO]     [creator]     Reusing layer 'paketo-buildpacks/ca-certificates:helper'
+[INFO]     [creator]     Reusing layer 'buildpacksio/lifecycle:launch.sbom'
+[INFO]     [creator]     Adding 1/1 app layer(s)
+[INFO]     [creator]     Reusing layer 'buildpacksio/lifecycle:launcher'
+[INFO]     [creator]     Reusing layer 'buildpacksio/lifecycle:config'
+[INFO]     [creator]     Reusing layer 'buildpacksio/lifecycle:process-types'
+[INFO]     [creator]     Adding label 'io.buildpacks.lifecycle.metadata'
+[INFO]     [creator]     Adding label 'io.buildpacks.build.metadata'
+[INFO]     [creator]     Adding label 'io.buildpacks.project.metadata'
+[INFO]     [creator]     Adding label 'org.opencontainers.image.title'
+[INFO]     [creator]     Adding label 'org.opencontainers.image.version'
+[INFO]     [creator]     Adding label 'org.springframework.boot.version'
+[INFO]     [creator]     Setting default process type 'web'
+[INFO]     [creator]     Saving docker.io/library/kms:0.0.1-SNAPSHOT...
+[INFO]     [creator]     *** Images (3ceb225eb0d4):
+[INFO]     [creator]           docker.io/library/kms:0.0.1-SNAPSHOT
+[INFO]     [creator]     Reusing cache layer 'paketo-buildpacks/bellsoft-liberica:native-image-svm'
+[INFO]     [creator]     Reusing cache layer 'paketo-buildpacks/syft:syft'
+[INFO]     [creator]     Adding cache layer 'paketo-buildpacks/native-image:native-image'
+[INFO]     [creator]     Reusing cache layer 'buildpacksio/lifecycle:cache.sbom'
+[INFO] 
+[INFO] Successfully built image 'docker.io/library/kms:0.0.1-SNAPSHOT'
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  02:26 min
+[INFO] Finished at: 2023-04-26T08:46:37-07:00
+[INFO] ------------------------------------------------------------------------
+ludo@ludo1:~/a/kms$ docker image tag kms:0.0.1-SNAPSHOT gcr.io/ludo-in-in/kms:0.0.1-SNAPSHOT
+ludo@ludo1:~/a/kms$ docker push gcr.io/ludo-in-in/kms:0.0.1-SNAPSHOT
+
